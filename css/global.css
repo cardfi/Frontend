@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir.eot');
+  src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir.woff2') format('woff2'),
+       url('fonts/Vazir.woff') format('woff'),
+       url('fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir-Bold.eot');
+  src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir-Bold.woff2') format('woff2'),
+       url('fonts/Vazir-Bold.woff') format('woff'),
+       url('fonts/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir-Light.eot');
+  src: url('fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir-Light.woff2') format('woff2'),
+       url('fonts/Vazir-Light.woff') format('woff'),
+       url('fonts/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir-Medium.eot');
+  src: url('fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir-Medium.woff2') format('woff2'),
+       url('fonts/Vazir-Medium.woff') format('woff'),
+       url('fonts/Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir-Thin.eot');
+  src: url('fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir-Thin.woff2') format('woff2'),
+       url('fonts/Vazir-Thin.woff') format('woff'),
+       url('fonts/Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/Vazir-Black.eot');
+  src: url('fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Vazir-Black.woff2') format('woff2'),
+       url('fonts/Vazir-Black.woff') format('woff'),
+       url('fonts/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: Vazir , 'Montserrat';
+		background: #f2f2f2;
+		font-size: normal;
+    direction: rtl;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Vazir , 'Montserrat';
+}
+ul, li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/*Components*/
+.component-one{
+  padding: 30px;
+}
+.g-card{
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.09);
+  position: relative;
+  margin: 0 20px;
+}
+/*Component -- Buttons*/
+.component-btn{
+  display: inline-block;
+  margin-left: 20px;
+}
+.g-btn{
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #fff;
+  background: #FF6C0B;
+  border:0;
+}
+.gradient-btn{
+  background: rgb(230,223,237);
+  background: -moz-linear-gradient(74deg, #FF9B92  0%, #C6BBD4 100%);
+  background: -webkit-linear-gradient(74deg, #FF9B92  0%, #C6BBD4 100%);
+  background: linear-gradient(74deg, #FF9B92  0%, #C6BBD4 100%);
+}
+.outline-btn{
+  border: 1px solid #FF6C0B;
+  color: #FF6C0B;
+  background: none;
+}
+.cancel-btn{
+  background: rgb(230,223,237);
+  color: #666;
+}
+.justtext-btn{
+  background: none;
+  color: #888;
+}
+.disable-btn{
+  background: #ddd;
+  color: #aaa;
+}
+/*Component -- Inputs*/
+.g-fl{
+  position: relative;
+}
+.g-fl input.g-input[type=text], .g-fl input.g-input[type=password]{
+  height: 45px;
+  width: 100%;
+  font-size: 13px;
+  border: 0;
+  border-bottom: 1px solid rgba(125,113,140,0.3);
+  color: #666;
+  background: none;
+}
+.g-fl.has-icon input.g-input{
+  padding-right: 30px;
+}
+.g-fl.has-icon .g-fl-ic{
+  position: absolute;
+  right: 0;
+  top: 11px;
+  font-size: 22px;
+  color: #7b539c;
+}
+.g-fl.has-error input.g-input{
+  border-color: #c13544;
+}
+.g-fl .g-fl-error{
+  position: absolute;
+  left: 0;
+  top: 48px;
+  color: #c13544;
+  font-size: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+.g-fl.has-error .g-fl-error{
+  opacity: 1;
+  visibility: visible;
+}
+/*Component -- Extra Inputs (Checkbox)*/
+.component-one.extra-inputs .g-check{
+  margin-bottom: 15px;
+}
+.g-check-label {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.g-check-input{
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.g-check span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.g-check-ic {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #BBABCF;
+  transition: all 0.2s ease;
+}
+.g-check-ic svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  stroke-dasharray: 18px;
+  stroke-dashoffset: 18px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.g-check-ic:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #7b539c;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.g-check-text{
+  padding-right: 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.g-check-label:hover .g-check-ic {
+  border-color: #7b539c;
+}
+
+.g-check input.g-check-input[type=checkbox]:checked + .g-check-ic {
+  background: #7b539c;
+  border-color: #7b539c;
+  animation: wave 0.4s ease;
+}
+.g-check input.g-check-input[type=checkbox]:checked + .g-check-ic svg {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+.g-check input.g-check-input[type=checkbox]:checked + .g-check-ic:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.g-check.check-disabled .g-check-label{
+ cursor: not-allowed;
+}
+.g-check.check-disabled .g-check-text{
+  color: #aaa;
+}
+.g-check.check-disabled input.g-check-input[type=checkbox] + .g-check-ic{
+  border-color: #ddd;
+}
+.g-check.check-disabled input.g-check-input[type=checkbox]:checked + .g-check-ic{
+  background: #ddd;
+  border-color: #ddd;
+}
+
+/*Component -- Extra Inputs (Radio)*/
+.component-one .g-radio{
+  margin-bottom: 15px;
+}
+.g-radio{
+  color: #666;
+  position: relative;
+  display: block;
+}
+.g-radio input.g-radio-input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.g-radio .g-radio-label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0px 25px 0px 25px;
+  height: 20px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.g-radio:hover .g-radio-label{
+	color: #666;
+}
+
+.g-radio .g-radio-ic{
+  display: inline-block;
+  position: relative;
+  border: 1px solid #AAAAAA;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  margin-left: 5px;
+  top: 5px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.g-radio .g-radio-ic::before {
+  display: block;
+  position: relative;
+	content: '';
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  top: 3.5px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+.g-radio .g-radio-text{
+  height: 18px;
+}
+.g-radio input.g-radio-input[type=radio]:checked ~ .g-radio-ic {
+  border: 1px solid #7b539c;
+}
+
+.g-radio input.g-radio-input[type=radio]:checked ~ .g-radio-ic::before{
+  background: #7b539c;
+}
+
+.g-radio input.g-radio-input[type=radio]:checked ~ .g-radio-text{
+  color: #7b539c;
+}
+.g-radio.radio-disabled .g-radio-label{
+  cursor: not-allowed;
+  color: #aaa;
+}
+.g-radio.radio-disabled input.g-radio-input[type=radio]:checked ~ .g-radio-text{
+  color: #aaa;
+}
+.g-radio.radio-disabled input.g-radio-input[type=radio]:checked ~ .g-radio-ic::before{
+  background: #aaa;
+}
+.g-radio.radio-disabled  input.g-radio-input[type=radio]:checked ~ .g-radio-ic {
+  border: 1px solid #aaa;
+}
+/*Component -- Tables*/
+.g-table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.g-table table th{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.g-table table td{
+  font-weight: 300;
+  font-size: 13px;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.g-table table tr:hover td {
+  background: rgba(0, 0, 0, 0.01);
+}
+.g-tools-col{
+  text-align: left;
+}
+.g-table-tool-one{
+  display: inline-block;
+  color: #666;
+  margin-right: 10px;
+}
+.g-table-tool-one i{
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+}
+/*Component -- Charts*/
+#area-chart *{
+  direction: ltr;
+}
+.highcharts-background{
+  fill: rgba(0, 0, 0, 0) !important;
+}
+.highcharts-point-select{
+  stroke: #7b539c;
+  fill: #fff;
+}
+.chart-one tspan, .chart-one text{
+  font-family: Vazir , 'Montserrat' ;
+}
+.highcharts-color-0{}
+/*Component -- Alerts*/
+.alert-holder{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  z-index: 999;
+  direction: ltr;
+  padding: 20px;
+}
+.alert-box{
+  background: #fff;
+  color: #545e71;
+  width: 300px;
+  position: relative;
+  padding: 20px 30px;
+  box-shadow: 0 1px 3px rgba(210, 197, 219,0.6), 0 1px 2px rgba(210, 197, 219,0.12);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-top: 20px;
+  direction: rtl;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.alert-box .alert-text{
+  font-size: 14px;
+  width: 250px;
+  padding: 0  40px 0 30px;
+}
+.alert-box .alert-ic i{
+  font-size: 25px;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.alert-box.successful {
+  background: #ebfbf3;
+  color: #30ad72;
+}
+.alert-box.successful .alert-ic i{
+  color: #30ad72;
+}
+.alert-box.failed{
+  background: #fdedef;
+  color: #bc2031;
+}
+.alert-box.failed .alert-ic i{
+  color: #bc2031;
+}
+.alert-box.info{
+  background: #f9f5fc;
+}
+.alert-box.info .alert-ic i{
+  color: #999;
+
+}
+/*Component -- Tabs*/
+/*Component -- Tooltips*/
+/*Component -- Modals*/
+
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.md-modal {
+  background: #fff;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+  z-index: 997;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+}
+.md-show ~ .md-overlay {
+	opacity: 0.95;
+	visibility: visible;
+}
+
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.md-show .md-modal{
+  visibility: visible;
+}
+.md-head .md-close{
+  position: absolute;
+  left: 10px;
+  background: none;
+  color: #888;
+  border: 0;
+  font-size: 20px;
+  z-index: 999;
+}
+.md-trigger{
+  position: relative;
+  /* z-index: 888; */
+  cursor: pointer;
+}
+.md-modal.custom-modal{
+  width: 600px;
+}
+.md-modal.alert-modal{
+  width: 320px;
+}
+.md-head{
+  padding: 10px 15px;
+}
+.md-body{
+padding: 30px;
+}
+.md-body span{
+  color: #666;
+}
+.md-footer{
+  padding: 10px 15px;
+}
+
+.md-modal.custom-modal.delete-modal{
+  width: 300px;
+  text-align: center;
+}
+.md-modal.custom-modal.delete-modal .md-body{
+  padding: 20px 30px;
+}
+.md-modal.custom-modal.delete-modal .md-footer{
+  padding: 20px 30px;
+}
+/*Component -- Fancy Select (Combo Select)*/
+div.fancy-select {
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #46565D;
+}
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 10px 9px 9px 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #fff;
+	border: 1px solid #9F8EB3;
+	border-top-color: #A5B2CB;
+	color: #9F8EB3;
+  font-weight: 300;
+	width: 100%;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #9F8EB3;
+	top: 20px;
+	left: 9px;
+}
+
+div.fancy-select div.trigger.open {
+	background: #9F8EB3;
+	border: 1px solid #9F8EB3;
+	color: #fff;
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	border-top-color: #fff;
+}
+
+div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	background: #fff;
+	border-radius: 4px;
+
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	min-width: 100%;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 50px;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	padding: 8px 12px;
+	color: #7b539c;
+	cursor: pointer;
+	white-space: nowrap;
+  font-weight: 300;
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+	background: rgba(159,142,179,0.1);
+	color: #7b539c;
+  font-weight: 500;
+}
+
+div.fancy-select ul.options li.hover {
+	color: #7b539c;
+  background: rgba(0,0,0,0.03);
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+
+}
