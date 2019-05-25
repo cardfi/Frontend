@@ -122,6 +122,14 @@ ul, li{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD100",endColorstr="#FFAA00",GradientType=1);
   color: #fff;
 }
+.light-gr{
+  background: rgba(86,54,224,1);
+	background: -moz-linear-gradient(74deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+	background: -webkit-linear-gradient(74deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+	background: linear-gradient(74deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD100",endColorstr="#FFAA00",GradientType=1);
+  color: #fff;
+}
 .cf-btn.social-btn{
   position: relative;
   background: #fff;
@@ -194,11 +202,26 @@ ul, li{
 	position: relative;
 	overflow: hidden;
 	width: 120px;
-	border-radius: 50%;
+
 	margin: 0 auto;
 }
 .acc-part .avatar img{
 	width: 120px;
+  border-radius: 50%;
+}
+.acc-part .avatar .acc-setting{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #FFAA00;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 16px;
+  background: #4D63FD;
+  color: #FFAA00;
 }
 .sidebar .acc-part h3{
 	font-weight: 600;
@@ -421,6 +444,12 @@ ul.explore-to-do li a:hover::after {
   position: relative;
   margin-bottom: 15px;
 }
+.event-card.inc-pipe{
+  width: 90%;
+}
+.event-card.inc-rating{
+  width: 80%;
+}
 .event-ic{
   float: left;
   width: 62px;
@@ -435,11 +464,10 @@ ul.explore-to-do li a:hover::after {
 }
 .event-det h4{
   color: #240C41;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   margin: 8px 0;
   position: relative;
-
 }
 .event-edit-name{
   color: #240C41;
@@ -465,6 +493,292 @@ ul.explore-to-do li a:hover::after {
   position: absolute;
   top: -45px;
   right: 0px;
+}
+.event-rate{
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.event-rate a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4px;
+  text-align: center;
+  margin-right: 10px;
+}
+.event-rate .event-dislike{
+  background: rgb(255,209,0);
+  background: -moz-linear-gradient(180deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+  background: linear-gradient(180deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endColorstr="#ffaa00",GradientType=1);
+}
+.event-rate .event-like{
+  background: rgb(255,209,0);
+background: -moz-linear-gradient(0deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+background: linear-gradient(0deg, rgba(255,209,0,1) 0%, rgba(255,170,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endColorstr="#ffaa00",GradientType=1);
+}
+.add-to-pipe{
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.add-to-pipe a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: center;
+  margin-right: 10px;
+  background: #FFAA00;
+}
+.explore-filters{
+  margin-bottom: 20px;
+}
+.explore-filters h3{
+  margin: 0;
+  margin-top: 8px;
+  color: #FFAA00;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cf-full-col{
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(12,12,13,0.2);
+  height: 75vh;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cf-full-col .cf-col-head{
+  margin-bottom: 40px;
+}
+.see-on-map{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.see-on-map a{
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+/*Alerts*/
+.alert-holder{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(86,54,224,1);
+	background: -moz-linear-gradient(74deg, rgba(86,54,224,0.8) 0%, rgba(77,99,253,0.8) 100%);
+	background: -webkit-linear-gradient(74deg, rgba(86,54,224,0.8) 0%, rgba(77,99,253,0.8) 100%);
+	background: linear-gradient(74deg, rgba(86,54,224,0.8) 0%, rgba(77,99,253,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5636E0",endColorstr="#4D63FD",GradientType=1);
+}
+.alert-win{
+  width: 350px;
+  background: rgba(255, 209, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  color: #fff;
+}
+.alert-title{
+  /* margin-bottom: 15px; */
+}
+.alert-title h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.alert-icon{
+  font-size: 60px;
+  color: #50E868;
+}
+.alert-icon i{
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.close-alert{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+/*Fancy Select*/
+div.fancy-select {
+	position: relative;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 13px;
+	color: #46565D;
+}
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 10px 24px 9px 9px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #fff;
+	border: 1px solid #9F8EB3;
+	border-top-color: #A5B2CB;
+	color: #9F8EB3;
+  font-weight: 300;
+	width: 100%;
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #9F8EB3;
+	top: 18px;
+	right: 9px;
+}
+
+div.fancy-select div.trigger.open {
+	background: #9F8EB3;
+	border: 1px solid #9F8EB3;
+	color: #fff;
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	border-top-color: #fff;
+}
+
+div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	background: #fff;
+	border-radius: 4px;
+
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	min-width: 100%;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 50px;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	padding: 8px 12px;
+	color: #7b539c;
+	cursor: pointer;
+	white-space: nowrap;
+  font-weight: 300;
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+	background: rgba(159,142,179,0.1);
+	color: #7b539c;
+  font-weight: 500;
+}
+
+div.fancy-select ul.options li.hover {
+	color: #7b539c;
+  background: rgba(0,0,0,0.03);
 }
 .no-padding {
     padding: 0;
