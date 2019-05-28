@@ -147,6 +147,7 @@ ul, li{
   background: -webkit-linear-gradient(90deg, rgba(77,99,253,1) 0%, rgba(86,54,224,1) 100%);
   background: linear-gradient(90deg, rgba(77,99,253,1) 0%, rgba(86,54,224,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d63fd",endColorstr="#5636e0",GradientType=1);
+  color: #fff;
 }
 .cf-btn.social-btn{
   position: relative;
@@ -582,7 +583,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   border-radius: 5px;
-  overflow: hidden;
+}
+.cf-full-col.explore-col{
+    overflow: hidden;
 }
 .cf-full-col .cf-col-head{
   margin-bottom: 40px;
@@ -795,6 +798,90 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   height: 1px;
   width: 30%;
   background: #e4e4e4;
+}
+.card-des-bg .des-bg-one.big{
+  width: 40%;
+  float: left;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.card-des-bg .des-bg-one{
+  width: 26%;
+  float: left;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 3px;
+}
+.des-add-bg{
+  border: 3px solid #9F8EB3;
+  color: #9F8EB3;
+}
+.card-des-gr .card-gr-one{
+  width: 29%;
+  float: left;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.gr-a{
+  background: rgb(77,99,253);
+  background: -moz-linear-gradient(90deg, #2C4CD3 0%, #9DC5EE 100%);
+  background: -webkit-linear-gradient(90deg, #2C4CD3 0%, #9DC5EE 100%);
+  background: linear-gradient(90deg, #2C4CD3 0%, #9DC5EE 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2C4CD3",endColorstr="#9DC5EE",GradientType=1);
+}
+.card-gr-one.des-add-pic{
+  text-align: center;
+  padding-top: 2px;
+  color: #9F8EB3;
+  font-size: 18px;
+}
+.add-card-link{
+  text-align: center;
+  margin: 20px auto;
+  color: #16344E;
+  font-size: 13px;
+  font-weight: 500;
+}
+.add-card-link i{
+  font-size: 12px;
+}
+.add-card-font .fancy-select{
+  margin: 10px 0;
+}
+.add-card-color{
+  text-align: center;
+}
+.card-color-one{
+  display: inline-block;
+  margin-right: 10px;
+}
+.card-color-one a{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: 8px;
+  margin-left: 8px;
+}
+.add-card-export{
+  text-align: center;
+}
+.export-btn a{
+  display: inline-block;
+  width: 50%;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 /*Alerts*/
 .alert-holder{
@@ -1009,7 +1096,7 @@ div.fancy-select ul.options li.hover {
 }
 
 a, a:hover, a:focus {
-    color: inherit;
+    
     text-decoration: none;
 		cursor: pointer;
 }
