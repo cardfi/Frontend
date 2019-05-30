@@ -240,6 +240,9 @@ ul, li{
   padding-top: 2px;
   font-size: 16px;
   background: #4D63FD;
+
+}
+.acc-part .avatar .acc-setting a{
   color: #FFAA00;
 }
 .sidebar .acc-part h3{
@@ -883,6 +886,32 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   font-weight: 500;
   margin-top: 20px;
 }
+/*Contacts*/
+.cf-tabs-links{
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  display: table;
+}
+.cf-tabs-links li{
+  display: table-cell;
+  text-align: center;
+}
+.cf-tabs-links li a{
+  color: #240C41;
+  display: inline-block;
+  padding: 3px 0;
+}
+.cf-tabs-links li.active a{
+  color: #FFAA00;
+  border-bottom: 2px solid #FFAA00;
+
+  font-weight: bold;
+}
+.cf-tabs-body{
+  padding: 0 20px;
+}
 /*Alerts*/
 .alert-holder{
   position: fixed;
@@ -1096,7 +1125,7 @@ div.fancy-select ul.options li.hover {
 }
 
 a, a:hover, a:focus {
-    
+
     text-decoration: none;
 		cursor: pointer;
 }
