@@ -34,7 +34,7 @@
 							<span>Explore</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-vcard-o gr-ic"></i>
@@ -58,7 +58,7 @@
 							<span>Events</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="has-sub">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-bullseye gr-ic"></i>
@@ -207,6 +207,9 @@
 			$('.cf-expandable-col').toggleClass('expanded-col');
 		});
 		$('.basic').fancySelect();
+		$('.has-sub>a').click(function(){
+			$(this).parent().toggleClass('expand');
+		});
 	</script>
 </body>
 

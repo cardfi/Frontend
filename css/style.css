@@ -212,6 +212,7 @@ ul, li{
 	border-right: 1px solid #eee;
 	position: fixed;
 	left: 0;
+  overflow-y: auto;
 }
 .sidebar .acc-part{
 	text-align: center;
@@ -249,12 +250,21 @@ ul, li{
 	font-weight: 600;
 	color: #fff;
 }
+.side-menu{
+
+}
 .side-menu > ul{
 	border-top: 1px solid #DAD7DF;
 }
 .side-menu > ul > li{
 	border-bottom: 1px solid #DAD7DF;
 	padding: 15px 20px;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  max-height: 57px;
+  position: relative;
 }
 .side-menu > ul > li > a{
 
@@ -273,6 +283,37 @@ ul, li{
 .side-menu > ul > li.active > a{
 	font-weight: 600;
   color: #fff;
+}
+.side-menu > ul > li > ul{
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.side-menu > ul > li.expand {
+  max-height: 500px;
+}
+.side-menu > ul > li.expand > ul{
+  opacity: 1;
+  visibility: visible;
+}
+.side-menu > ul > li.has-sub:after{
+  content: "\f078";
+  font-family: 'FontAwesome';
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  top: 18px;
+  right: 15px;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.side-menu > ul > li.expand:after {
+  transform: rotate(180deg);
 }
 .menu-ic{
 	width: 30px;
@@ -295,7 +336,7 @@ ul, li{
 .side-menu > ul > li > ul > li > a{
 	display: inline-block;
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px;
   color: #fff;
 }
 .side-menu > ul > li > ul > li.current{
@@ -354,11 +395,11 @@ ul, li{
   top: 5px;
 }
 .sidebar .logo{
-  position: absolute;
-  bottom: 0px;
+  position: relative;
   width: 100%;
   text-align: center;
   padding: 20px 0;
+  margin-top: 30px;
 }
 .sidebar .logo img{
   height: 50px;
@@ -1203,6 +1244,54 @@ text-align: center;
 }
 .link-pipeline a i{
 font-size: 20px;
+}
+
+/*Setting*/
+.setting-fl{
+  margin-bottom: 15px;
+}
+.setting-fl span{
+  font-size: 14px;
+  color: #7D718C;
+  display: block;
+}
+.setting-fl input{
+  border: 0;
+  border-bottom: 1px solid #E1D9EB;
+  background: none;
+  width: 100%;
+  height: 50px;
+}
+
+.edit-avatar{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+}
+.edit-avatar img{
+  height: 100px;
+  border-radius: 50%;
+}
+.edit-avatar a{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: #4D63FD;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  border-radius: 50%;
+  padding-top: 2px;
+}
+.setting-fl.cf-fl-btn{
+  text-align: center;
+  margin: 40px 0;
+}
+.setting-fl.cf-fl-btn input[type="submit"]{
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 /*Tabs*/
 .cf-tabs-links{
