@@ -536,6 +536,12 @@ ul.explore-to-do li.logout a:hover::after {
   padding-top: 12px;
   margin-right: 15px;
 }
+.event-ic img{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-top: -12px;
+}
 .event-det h4{
   color: #240C41;
   font-weight: 500;
@@ -678,6 +684,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   position: relative;
   box-shadow: 0 1px 3px 0 rgba(12,12,13,0.1);
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .card-ratio{
 
