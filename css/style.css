@@ -299,7 +299,7 @@ ul, li{
   opacity: 1;
   visibility: visible;
 }
-.side-menu > ul > li.has-sub:after{
+.side-menu > ul > li.has-sub > a:after{
   content: "\f078";
   font-family: 'FontAwesome';
   position: absolute;
@@ -312,7 +312,7 @@ ul, li{
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
 }
-.side-menu > ul > li.expand:after {
+.side-menu > ul > li.expand > a:after {
   transform: rotate(180deg);
 }
 .menu-ic{
@@ -517,6 +517,8 @@ ul.explore-to-do li.logout a:hover::after {
   padding: 10px;
   position: relative;
   margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
 }
 .event-card.inc-pipe{
   width: 90%;
@@ -536,11 +538,13 @@ ul.explore-to-do li.logout a:hover::after {
   padding-top: 12px;
   margin-right: 15px;
 }
-.event-ic img{
+.contact-card-one .event-ic{
+  padding-top: 0;
+}
+.contact-card-one .event-ic img{
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  margin-top: -12px;
 }
 .event-det h4{
   color: #240C41;
@@ -561,7 +565,7 @@ ul.explore-to-do li.logout a:hover::after {
 .event-card-tools{
   position: absolute;
   right: 10px;
-  bottom: 5px;
+  top: 5px;
 }
 .event-tool-one{
   float: right;
@@ -569,10 +573,16 @@ ul.explore-to-do li.logout a:hover::after {
   font-size: 20px;
   color: #BBABCF;
 }
-.event-tool-one.tool-more{
+.event-card-meta{
   position: absolute;
-  top: -45px;
-  right: 0px;
+  right: 10px;
+  bottom: 5px;
+}
+.event-meta-one{
+  float: right;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #BBABCF;
 }
 .event-rate{
   position: absolute;
@@ -649,12 +659,24 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 3px 0 rgba(12,12,13,0.2);
-  min-height: 80vh;
+  height: 80vh;
   transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   border-radius: 5px;
+  overflow-y: hidden;
+}
+.col-scroll-pane{
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.has-head .col-scroll-pane{
+  top: 70px;
 }
 .cf-full-col.explore-col{
     overflow: hidden;
@@ -1032,32 +1054,44 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   margin-left: 5px;
 }
 .contact-label-one.add-new{
-  padding: 5px 9px;
+  padding: 5px 10px 5px 15px;
   text-align: center;
-  border-radius: 50%;
+  background: #ededed;
+  color: #999;
 }
 .contact-label-one.add-new i{
   margin-left: 0;
 }
+.notes-carousel .flickity-button{
+  width: 24px;
+  height: 24px;
+  background: #F1EEF4;
+}
 .contact-note-one{
   border-radius: 10px;
-  width: 140px;
+  width: 120px;
+  height: 125px;
   font-size: 12px;
   background: #6D7177;
   color: #fff;
   padding: 8px;
   display: inline-block;
-  vertical-align: middle;
+  overflow: hidden;
+  margin-right: 10px;
 }
-.add-note{
+.contact-note-one.add-note{
   display: inline-block;
   padding: 5px 9px;
   text-align: center;
-  border-radius: 50%;
-  vertical-align: middle;
-  background: #6D7177;
-  color: #fff;
+  background: #ededed;
+  color: #999;
   margin-left: 5px;
+  padding-top: 35px;
+}
+.contact-note-one.add-note i{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 .last-meet{
   color: #4D63FD;
@@ -1524,6 +1558,153 @@ div.fancy-select ul.options li.hover {
 	color: #7b539c;
   background: rgba(0,0,0,0.03);
 }
+
+
+/*************** SCROLLBAR BASE CSS ***************/
+
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+
+.scrollbar-inner > .scroll-element,
+.scrollbar-inner > .scroll-element div
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scrollbar-inner > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y {
+    height: 100%;
+    right: 2px;
+    top: 0;
+    width: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer,
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+
+
+
+
 .no-padding {
     padding: 0;
 }
