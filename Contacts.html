@@ -143,6 +143,19 @@
 											<a href="#" class="event-tool-one tool-more">
 												<i class="fa fa-ellipsis-v"></i>
 											</a>
+											<div class="tools-drop">
+												<ul>
+													<li>
+														<a href="#">Edit</a>
+													</li>
+													<li>
+														<a href="#">Share</a>
+													</li>
+													<li>
+														<a href="#">Delete</a>
+													</li>
+												</ul>
+											</div>
 										</div>
 										<div class="event-card-meta">
 											<div href="#" class="event-meta-one">
@@ -242,17 +255,22 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fancySelect.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/jquery.jscrollpane.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
 	<script>
 		$('.double-up').click(function(){
 			$('.cf-expandable-col').toggleClass('expanded-col');
 		});
-		$('.basic').fancySelect();
 		$('.notes-carousel').flickity({
 		  // options
 		  cellAlign: 'left',
 		  contain: true,
 			pageDots: false
 		});
+		$('.tool-more').click(function(){
+			$(this).parent().find('.tools-drop').toggleClass('show-up');
+		});
+		$('.col-scroll-pane').jScrollPane();
 	</script>
 </body>
 

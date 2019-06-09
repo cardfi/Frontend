@@ -552,6 +552,7 @@ ul.explore-to-do li.logout a:hover::after {
   font-size: 16px;
   margin: 8px 0;
   position: relative;
+  text-transform: capitalize;
 }
 .event-edit-name{
   color: #240C41;
@@ -567,6 +568,36 @@ ul.explore-to-do li.logout a:hover::after {
   right: 10px;
   top: 5px;
 }
+.tools-drop{
+  width: 100px;
+  background: #fff;
+  position: absolute;
+  right: -4px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 991;
+  box-shadow: 0 1px 3px 0 rgba(12,12,13,0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.tools-drop.show-up{
+  opacity: 1;
+  visibility: visible;
+}
+.tools-drop ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tools-drop ul li{
+  padding: 3px 0;
+  font-size: 12px;
+}
+
 .event-tool-one{
   float: right;
   margin-left: 10px;
@@ -1002,6 +1033,32 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   color: #999999;
   font-size: 18px;
   margin-left: 10px;
+}
+#single-contact{
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+}
+#single-contact.show-up, #loader.show-up{
+    opacity: 1;
+    visibility: visible;
+}
+#loader{
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 .contact-pic{
   text-align: center;
@@ -1559,150 +1616,125 @@ div.fancy-select ul.options li.hover {
   background: rgba(0,0,0,0.03);
 }
 
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
 
-/*************** SCROLLBAR BASE CSS ***************/
-
-.scroll-wrapper {
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: relative;
-}
-
-.scroll-wrapper > .scroll-content {
-    border: none !important;
-    box-sizing: content-box !important;
-    height: auto;
-    left: 0;
-    margin: 0;
-    max-height: none;
-    max-width: none !important;
-    overflow: scroll !important;
-    padding: 0;
-    position: relative !important;
-    top: 0;
-    width: auto !important;
-}
-
-.scroll-wrapper > .scroll-content::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
-.scroll-element {
-    display: none;
-}
-.scroll-element, .scroll-element div {
-    box-sizing: content-box;
-}
-
-.scroll-element.scroll-x.scroll-scrollx_visible,
-.scroll-element.scroll-y.scroll-scrolly_visible {
-    display: block;
-}
-
-.scroll-element .scroll-bar,
-.scroll-element .scroll-arrow {
-    cursor: default;
-}
-
-.scroll-textarea {
-    border: 1px solid #cccccc;
-    border-top-color: #999999;
-}
-.scroll-textarea > .scroll-content {
-    overflow: hidden !important;
-}
-.scroll-textarea > .scroll-content > textarea {
-    border: none !important;
-    box-sizing: border-box;
-    height: 100% !important;
-    margin: 0;
-    max-height: none !important;
-    max-width: none !important;
-    overflow: scroll !important;
-    outline: none;
-    padding: 2px;
-    position: relative !important;
-    top: 0;
-    width: 100% !important;
-}
-.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
-
-
-
-/*************** SIMPLE INNER SCROLLBAR ***************/
-
-.scrollbar-inner > .scroll-element,
-.scrollbar-inner > .scroll-element div
+.jspContainer
 {
-    border: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 10;
+	overflow: hidden;
+	position: relative;
 }
 
-.scrollbar-inner > .scroll-element div {
-    display: block;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
+.jspPane
+{
+	position: absolute;
 }
 
-.scrollbar-inner > .scroll-element.scroll-x {
-    bottom: 2px;
-    height: 8px;
-    left: 0;
-    width: 100%;
+.jspVerticalBar
+{
+	/* background: red; */
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 5px;
 }
 
-.scrollbar-inner > .scroll-element.scroll-y {
-    height: 100%;
-    right: 2px;
-    top: 0;
-    width: 8px;
+.jspHorizontalBar
+{
+	/* background: red; */
+	bottom: 0;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	width: 100%;
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_outer {
-    overflow: hidden;
+.jspCap
+{
+	display: none;
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_outer,
-.scrollbar-inner > .scroll-element .scroll-element_track,
-.scrollbar-inner > .scroll-element .scroll-bar {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+.jspHorizontalBar .jspCap
+{
+	float: left;
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_track,
-.scrollbar-inner > .scroll-element .scroll-bar {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: alpha(opacity=40);
-    opacity: 0.4;
+.jspTrack
+{
+	background: rgba(0, 0, 0, 0.05);
+	position: relative;
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
-.scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
-.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+.jspDrag
+{
+	background: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	left: 0;
+	position: relative;
+	top: 0;
+  border-radius: 5px;
 
+}
 
-/* update scrollbar offset if both scrolls are visible */
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
 
-.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
-.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+.jspArrow
+{
+	background: #999;
+	cursor: pointer;
+        direction: ltr;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-indent: -20000px;
+}
 
+.jspDisabled
+{
+	background: #80808d;
+	cursor: default;
+}
 
-.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
-.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+.jspVerticalBar .jspArrow
+{
+	height: 5px;
+}
 
+.jspHorizontalBar .jspArrow
+{
+	float: left;
+	height: 100%;
+	width: 10px;
+}
 
+.jspVerticalBar .jspArrow:focus
+{
+        border: 1px solid red;
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
 
 
 .no-padding {
