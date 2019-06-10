@@ -205,7 +205,6 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -270,10 +269,14 @@
 									<div class="contact-meta">
 										<span class="info-label">Last time you met each other</span>
 										<a href="#" class="last-meet">
-											<i class="fa fa-map-marker"></i>
-											<span>Movahed danesh, Aghdasiye</span>
+											<i class="fa fa-clock-o"></i>
+											<span>January 15th</span>
 											<span>at</span>
 											<span>12:08</span>
+										</a>
+										<a href="#" class="last-meet">
+											<i class="fa fa-map-marker"></i>
+											<span>Movahed danesh, Aghdasiye</span>
 										</a>
 									</div>
 									<div class="contact-more">
@@ -304,10 +307,22 @@
 		  contain: true,
 			pageDots: false
 		});
-		$('.tool-more').click(function(){
-			$(this).parent().find('.tools-drop').toggleClass('show-up');
-		});
+
 		$('.col-scroll-pane').jScrollPane();
+
+
+		  $(".event-card-tools").click(function(){
+		    $(this).find('.tools-drop').toggleClass('show-up');
+
+		    $(this).parent().toggleClass('active');
+		    return false;
+		  });
+
+		  $(document).click(function(e){
+		    that = e.target;
+		    if ($(that).closest(".tools-drop").length < 1 && !$(that).hasClass("show-up")) $(".tools-drop").removeClass('show-up');
+		  });
+
 	</script>
 </body>
 

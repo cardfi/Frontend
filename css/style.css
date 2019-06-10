@@ -1152,6 +1152,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 }
 .last-meet{
   color: #4D63FD;
+  display: block;
+  margin-bottom: 5px;
 }
 .last-meet i{
   color: #999;
