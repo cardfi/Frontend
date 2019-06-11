@@ -33,7 +33,7 @@
 							<span>Explore</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-vcard-o gr-ic"></i>
@@ -57,7 +57,7 @@
 							<span>Events</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="has-sub">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-bullseye gr-ic"></i>
@@ -90,8 +90,32 @@
 		</div>
 		<div class="content">
 			<div class="head">
-				<div class="search-part">
-					<input type="text" placeholder="Search anything here" />
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
 				</div>
 			</div>
 			<div class="main-content">
@@ -116,12 +140,27 @@
 										<a href="#" class="event-tool-one tool-more">
 											<i class="fa fa-ellipsis-v"></i>
 										</a>
-										<a href="#" class="event-tool-one tool-note">
+										<div class="tools-drop">
+											<ul>
+												<li>
+													<a href="#">Edit</a>
+												</li>
+												<li>
+													<a href="#">Share</a>
+												</li>
+												<li>
+													<a href="#">Delete</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="event-card-meta">
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-sticky-note-o"></i>
-										</a>
-										<a href="#" class="event-tool-one tool-tag">
+										</div>
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-tag"></i>
-										</a>
+										</div>
 									</div>
 								</div>
 								<div class="event-card clearfix">
@@ -141,12 +180,27 @@
 										<a href="#" class="event-tool-one tool-more">
 											<i class="fa fa-ellipsis-v"></i>
 										</a>
-										<a href="#" class="event-tool-one tool-note">
+										<div class="tools-drop">
+											<ul>
+												<li>
+													<a href="#">Edit</a>
+												</li>
+												<li>
+													<a href="#">Share</a>
+												</li>
+												<li>
+													<a href="#">Delete</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="event-card-meta">
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-sticky-note-o"></i>
-										</a>
-										<a href="#" class="event-tool-one tool-tag">
+										</div>
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-tag"></i>
-										</a>
+										</div>
 									</div>
 								</div>
 								<div class="event-card clearfix">
@@ -166,12 +220,27 @@
 										<a href="#" class="event-tool-one tool-more">
 											<i class="fa fa-ellipsis-v"></i>
 										</a>
-										<a href="#" class="event-tool-one tool-note">
+										<div class="tools-drop">
+											<ul>
+												<li>
+													<a href="#">Edit</a>
+												</li>
+												<li>
+													<a href="#">Share</a>
+												</li>
+												<li>
+													<a href="#">Delete</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="event-card-meta">
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-sticky-note-o"></i>
-										</a>
-										<a href="#" class="event-tool-one tool-tag">
+										</div>
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-tag"></i>
-										</a>
+										</div>
 									</div>
 								</div>
 								<div class="event-card clearfix">
@@ -191,12 +260,27 @@
 										<a href="#" class="event-tool-one tool-more">
 											<i class="fa fa-ellipsis-v"></i>
 										</a>
-										<a href="#" class="event-tool-one tool-note">
+										<div class="tools-drop">
+											<ul>
+												<li>
+													<a href="#">Edit</a>
+												</li>
+												<li>
+													<a href="#">Share</a>
+												</li>
+												<li>
+													<a href="#">Delete</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="event-card-meta">
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-sticky-note-o"></i>
-										</a>
-										<a href="#" class="event-tool-one tool-tag">
+										</div>
+										<div href="#" class="event-meta-one">
 											<i class="fa fa-tag"></i>
-										</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -228,12 +312,15 @@
 								<div class="contact-meta">
 									<div class="contact-note-one">
 										<span>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
 										</span>
 									</div>
-									<a href="#" class="add-note">
+									<div class="contact-note-one add-note">
 										<i class="fa fa-plus"></i>
-									</a>
+										<span>
+											Add note
+										</span>
+									</div>
 								</div>
 								<div class="event-ov-map"></div>
 								<div class="event-people">
@@ -241,16 +328,13 @@
 										Peoples
 										<span class="count">(4)</span>
 									</h4>
-									<div class="event-card clearfix">
+									<div class="event-card contact-card-one clearfix">
 										<div class="event-ic">
-											<i class="fa fa-user"></i>
+											<img src="images/contact.jpg" alt="">
 										</div>
 										<div class="event-det">
 											<h4>
 												Farbod Sadeghian
-												<a href="#" class="event-edit-name">
-													<i class="fa fa-pencil"></i>
-												</a>
 											</h4>
 											<span>Marketing Manager at Careem</span>
 										</div>
@@ -258,24 +342,36 @@
 											<a href="#" class="event-tool-one tool-more">
 												<i class="fa fa-ellipsis-v"></i>
 											</a>
-											<a href="#" class="event-tool-one tool-note">
+											<div class="tools-drop">
+												<ul>
+													<li>
+														<a href="#">Edit</a>
+													</li>
+													<li>
+														<a href="#">Share</a>
+													</li>
+													<li>
+														<a href="#">Delete</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="event-card-meta">
+											<div href="#" class="event-meta-one">
 												<i class="fa fa-sticky-note-o"></i>
-											</a>
-											<a href="#" class="event-tool-one tool-tag">
+											</div>
+											<div href="#" class="event-meta-one">
 												<i class="fa fa-tag"></i>
-											</a>
+											</div>
 										</div>
 									</div>
-									<div class="event-card clearfix">
+									<div class="event-card contact-card-one clearfix">
 										<div class="event-ic">
-											<i class="fa fa-user"></i>
+											<img src="images/contact.jpg" alt="">
 										</div>
 										<div class="event-det">
 											<h4>
 												Farbod Sadeghian
-												<a href="#" class="event-edit-name">
-													<i class="fa fa-pencil"></i>
-												</a>
 											</h4>
 											<span>Marketing Manager at Careem</span>
 										</div>
@@ -283,12 +379,101 @@
 											<a href="#" class="event-tool-one tool-more">
 												<i class="fa fa-ellipsis-v"></i>
 											</a>
-											<a href="#" class="event-tool-one tool-note">
+											<div class="tools-drop">
+												<ul>
+													<li>
+														<a href="#">Edit</a>
+													</li>
+													<li>
+														<a href="#">Share</a>
+													</li>
+													<li>
+														<a href="#">Delete</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="event-card-meta">
+											<div href="#" class="event-meta-one">
 												<i class="fa fa-sticky-note-o"></i>
-											</a>
-											<a href="#" class="event-tool-one tool-tag">
+											</div>
+											<div href="#" class="event-meta-one">
 												<i class="fa fa-tag"></i>
+											</div>
+										</div>
+									</div>
+									<div class="event-card contact-card-one clearfix">
+										<div class="event-ic">
+											<img src="images/contact.jpg" alt="">
+										</div>
+										<div class="event-det">
+											<h4>
+												Farbod Sadeghian
+											</h4>
+											<span>Marketing Manager at Careem</span>
+										</div>
+										<div class="event-card-tools">
+											<a href="#" class="event-tool-one tool-more">
+												<i class="fa fa-ellipsis-v"></i>
 											</a>
+											<div class="tools-drop">
+												<ul>
+													<li>
+														<a href="#">Edit</a>
+													</li>
+													<li>
+														<a href="#">Share</a>
+													</li>
+													<li>
+														<a href="#">Delete</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="event-card-meta">
+											<div href="#" class="event-meta-one">
+												<i class="fa fa-sticky-note-o"></i>
+											</div>
+											<div href="#" class="event-meta-one">
+												<i class="fa fa-tag"></i>
+											</div>
+										</div>
+									</div>
+									<div class="event-card contact-card-one clearfix">
+										<div class="event-ic">
+											<img src="images/contact.jpg" alt="">
+										</div>
+										<div class="event-det">
+											<h4>
+												Farbod Sadeghian
+											</h4>
+											<span>Marketing Manager at Careem</span>
+										</div>
+										<div class="event-card-tools">
+											<a href="#" class="event-tool-one tool-more">
+												<i class="fa fa-ellipsis-v"></i>
+											</a>
+											<div class="tools-drop">
+												<ul>
+													<li>
+														<a href="#">Edit</a>
+													</li>
+													<li>
+														<a href="#">Share</a>
+													</li>
+													<li>
+														<a href="#">Delete</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="event-card-meta">
+											<div href="#" class="event-meta-one">
+												<i class="fa fa-sticky-note-o"></i>
+											</div>
+											<div href="#" class="event-meta-one">
+												<i class="fa fa-tag"></i>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -305,12 +490,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fancySelect.js"></script>
-	<script>
-		$('.double-up').click(function(){
-			$('.cf-expandable-col').toggleClass('expanded-col');
-		});
-		$('.basic').fancySelect();
-	</script>
+	<script src="js/cardfi.js"></script>
 </body>
 
 </html>

@@ -365,34 +365,81 @@ ul, li{
 	top: 0;
 	right: 0;
 	left: 280px;
-}
-.head{
-	background: #fff;
-	padding: 10px 20px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 280px;
   box-shadow: 0 1px 3px 0 rgba(12,12,13,0.2);
   z-index: 800;
 }
+.head-tools{
+  float: right;
+  padding-right: 20px;
+}
+.head-tool-one{
+  float: right;
+  margin-left: 25px;
+  color: #999;
+  font-size: 26px;
+}
 .search-part{
   position: relative;
+  border-bottom: 0px;
+  width: 300px;
+  float: left;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.search-part.extend-it{
+  border-bottom: 1px solid #B8B8B8;
+  width: 500px;
+}
+.search-filter{
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.search-filter a{
+  font-size: 24px;
+  color: #888;
+  margin-left: 10px;
 }
 .search-part input{
   height: 40px;
   border: 0;
   background: none;
-  width: 200px;
+  width: 300px;
   color: #484848;
+  font-size: 16px;
 }
-.search-part:after{
-  content: "\f002";
-  font-family: 'FontAwesome';
+a.search-go{
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 6px 15px;
+}
+.close-search{
   position: absolute;
-  color: #4B4B5D;
-  font-size: 20px;
+  right: -30px;
   top: 5px;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.close-search a{
+  color: #282828;
+}
+.search-part.extend-it .close-search, .search-part.extend-it .search-filter{
+  opacity: 1;
+  visibility: visible;
 }
 .sidebar .logo{
   position: relative;
@@ -511,8 +558,8 @@ ul.explore-to-do li.logout a:hover::after {
   top: 11px;
 }
 .event-card{
-  background: #F1EEF4;
-  border: 1px solid #E1D9EB;
+  background: #f7f7f7;
+  border: 1px solid #eee;
   border-radius: 5px;
   padding: 10px;
   position: relative;
@@ -602,7 +649,7 @@ ul.explore-to-do li.logout a:hover::after {
   float: right;
   margin-left: 10px;
   font-size: 20px;
-  color: #BBABCF;
+  color: #aaa;
 }
 .event-card-meta{
   position: absolute;
@@ -613,7 +660,7 @@ ul.explore-to-do li.logout a:hover::after {
   float: right;
   margin-left: 10px;
   font-size: 20px;
-  color: #BBABCF;
+  color: #bbb;
 }
 .event-rate{
   position: absolute;
@@ -696,7 +743,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   border-radius: 5px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 .col-scroll-pane{
   overflow-y: auto;
@@ -730,8 +777,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 
 /*My Cards*/
 .my-card-one{
-  min-width: 300px;
-  min-height: 170px;
   border-radius: 5px;
   padding: 20px;
   position: relative;
@@ -739,8 +784,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   overflow: hidden;
   margin-bottom: 30px;
 }
-.card-ratio{
-
+.my-card-one.sample-upload{
+  padding: 0;
+}
+.card-ratio img{
+  width: 100%;
 }
 .my-card-one.dark-template{
   background: #10273B;
@@ -788,11 +836,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgb(125,113,140);
-  background: -moz-linear-gradient(0deg, rgba(125,113,140,0.95) 0%, rgba(89,76,104,0.95) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(125,113,140,0.95) 0%, rgba(89,76,104,0.95) 100%);
-  background: linear-gradient(0deg, rgba(125,113,140,0.95) 0%, rgba(89,76,104,0.95) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d718c",endColorstr="#594c68",GradientType=1);
+  background: rgb(77,99,253);
+  background: -moz-linear-gradient(180deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
+  background: linear-gradient(180deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d63fd",endColorstr="#5636e0",GradientType=1);
   text-align: center;
   opacity: 0;
   visibility: hidden;
@@ -841,12 +889,42 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   color: #999999;
   text-align: center;
   display: inline-block;
-  padding-top: 50px;
+  width: 100%;
 }
 .my-card-one.add-new i{
   display: block;
   font-size: 30px;
   margin-bottom: 10px;
+}
+.add-new-card{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  right: 0;
+}
+/*Add Card Option*/
+.add-card-option{
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+.card-option-text{
+  height: 100px;
+  line-height: 24px;
+  color: #16344E;
+}
+.card-option-btn{
+  text-align: center;
+}
+.add-card-option a{
+  padding: 8px 30px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 500;
 }
 /*Add New Card*/
 .add-card-col{
@@ -865,7 +943,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 }
 .company-info input[type=submit]{
   padding: 8px 20px;
-  width: 100%;
+
   color: #fff;
   border: 0;
   border-radius: 5px;
@@ -1177,6 +1255,7 @@ text-align: center;
 }
 .contact-card{
   margin-bottom: 30px;
+  padding: 30px;
 }
 .contact-mutual-events{
   padding: 20px;
@@ -1348,7 +1427,7 @@ font-size: 20px;
 
 /*Setting*/
 .setting-fl{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .setting-fl span{
   font-size: 14px;
@@ -1360,7 +1439,7 @@ font-size: 20px;
   border-bottom: 1px solid #E1D9EB;
   background: none;
   width: 100%;
-  height: 50px;
+  height: 45px;
 }
 
 .edit-avatar{

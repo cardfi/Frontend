@@ -34,7 +34,7 @@
 							<span>Explore</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-vcard-o gr-ic"></i>
@@ -58,7 +58,7 @@
 							<span>Events</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="has-sub">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-bullseye gr-ic"></i>
@@ -91,8 +91,32 @@
 		</div>
 		<div class="content">
 			<div class="head">
-				<div class="search-part">
-					<input type="text" placeholder="Search anything here" />
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
 				</div>
 			</div>
 			<div class="main-content">
@@ -122,42 +146,17 @@
 							</div>
 							<div class="add-card-section">
 								<h3>Company Information</h3>
-								<div class="container no-padding">
-									<div class="row">
-										<div class="col-sm-5">
-											<div class="company-info logo">
-												<div class="logo-preview">
+								<div class="company-info logo">
+									<div class="logo-preview">
 
-												</div>
-												<input class="light-gr" type="submit" value="Upload logo" />
-											</div>
-										</div>
-										<div class="col-sm-7">
-											<div class="company-info map">
-												<div class="map-preview">
-
-												</div>
-												<input class="light-gr" type="submit" value="Set location" />
-											</div>
-										</div>
 									</div>
+									<input class="light-gr" type="submit" value="Upload logo" />
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="cf-full-col add-card-col">
-							<div class="add-card-section">
-								<h3>Upload Your Card</h3>
-								<div class="add-card-hint">
-									<span>If you already have a designed business card (PDF or JPG), You could upload it, but it's still necessary to complete some of the filleds that have star (*).</span>
-								</div>
-								<div class="upload-design">
-									<input class="medium-gr" type="submit" name="" value="Upload Card" />
-								</div>
-								<div class="add-card-separator">
-									<span class="ac-sep-label">OR</span>
-								</div>
 								<div class="add-card-section">
 									<h3>Design</h3>
 									<div class="container no-padding">
@@ -229,7 +228,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -238,22 +236,23 @@
 								<h3>Card Preview</h3>
 								<div class="my-card-one light-template">
 									<div class="card-ratio">
-									<div class="personal-info">
-										<h3>Farbod Sadeghian</h3>
-										<span>CEO & Founder</span>
-									</div>
-									<div class="company-info clearfix">
-										<div class="company-logo">
-											<img src="images/noxel-b.png" alt="">
+										<img src="images/card-ratio.png" alt="">
+										<div class="personal-info">
+											<h3>Farbod Sadeghian</h3>
+											<span>CEO & Founder</span>
 										</div>
-										<div class="contact-info">
-											<span>John@noxel.com</span>
-											<br />
-											<span>+98(912)368 4635</span>
-											<br />
-											<span>+98(21)8888 8888</span>
+										<div class="company-info clearfix">
+											<div class="company-logo">
+												<img src="images/noxel-b.png" alt="">
+											</div>
+											<div class="contact-info">
+												<span>John@noxel.com</span>
+												<br />
+												<span>+98(912)368 4635</span>
+												<br />
+												<span>+98(21)8888 8888</span>
+											</div>
 										</div>
-									</div>
 									</div>
 								</div>
 
@@ -275,12 +274,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fancySelect.js"></script>
-	<script>
-		$('.double-up').click(function(){
-			$('.cf-expandable-col').toggleClass('expanded-col');
-		});
-		$('.basic').fancySelect();
-	</script>
+	<script src="js/cardfi.js"></script>
 </body>
 
 </html>

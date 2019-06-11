@@ -34,7 +34,7 @@
 							<span>Explore</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-vcard-o gr-ic"></i>
@@ -58,7 +58,7 @@
 							<span>Events</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="has-sub">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-bullseye gr-ic"></i>
@@ -91,34 +91,68 @@
 		</div>
 		<div class="content">
 			<div class="head">
-				<div class="search-part">
-					<input type="text" placeholder="Search anything here" />
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
 				</div>
 			</div>
 			<div class="main-content">
 				<div class="container-fluid">
-					<div class="cf-expandable-col">
-						<div class="cf-col-head">
-							<h3>Need to Care</h3>
-						</div>
-						<div class="cf-expandable-body">
-							<ul class="explore-to-do">
-								<li>
-									<a href="#">
-										<span>Choose a better name for an events</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Link an events to pipline</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>10 New Contact </span>
-									</a>
-								</li>
-							</ul>
+					<div class="my-cards">
+						<div class="container-fluid no-padding">
+							<div class="col-sm-4">
+								<div class="add-card-option">
+									<div class="card-option-text">
+										<p>
+											You can create your own business card with Cardfi editor. Try different backgrounds, styles and fonts, until you can see your desired design.
+										</p>
+									</div>
+									<div class="card-option-btn">
+										<a href="#" class="medium-gr">
+											Add New Card
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="add-card-option">
+									<div class="card-option-text">
+										<p>
+											If you already have a perfect design for your Business Card, you can easily upload it here for us.
+										</p>
+									</div>
+									<div class="card-option-btn">
+										<a href="#" class="medium-gr">
+											Upload Card
+										</a>
+									</div>
+
+
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -127,6 +161,8 @@
 	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fancySelect.js"></script>
+	<script src="js/cardfi.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@
 							<span>Explore</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-vcard-o gr-ic"></i>
@@ -58,7 +58,7 @@
 							<span>Events</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="has-sub">
 						<a>
 							<div class="menu-ic">
 								<i class="fa fa-bullseye gr-ic"></i>
@@ -91,8 +91,32 @@
 		</div>
 		<div class="content">
 			<div class="head">
-				<div class="search-part">
-					<input type="text" placeholder="Search anything here" />
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
 				</div>
 			</div>
 			<div class="main-content">
@@ -163,11 +187,7 @@
 	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script>
-		$('.double-up').click(function(){
-			$('.cf-expandable-col').toggleClass('expanded-col');
-		});
-	</script>
+	<script src="js/cardfi.js"></script>
 </body>
 
 </html>
