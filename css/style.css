@@ -403,11 +403,51 @@ ul, li{
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
 }
+.search-filter-one{
+  display: inline-block;
+  position: relative;
+}
 .search-filter a{
   font-size: 24px;
   color: #888;
   margin-left: 10px;
 }
+/* .search-date-win{
+  padding: 20px;
+  background: #fff;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(0,0,0,0.2);
+  top: 45px;
+}
+.search-date-win:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(0,0,0,0.2);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 5px;
+}
+.search-date-win:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 5px;
+} */
 .search-part input{
   height: 40px;
   border: 0;
@@ -1080,6 +1120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   position: relative;
   top: 8px;
   margin-left: 8px;
+  overflow: hidden;
 }
 .add-card-export{
   text-align: center;
