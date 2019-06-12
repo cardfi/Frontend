@@ -1538,6 +1538,64 @@ font-size: 20px;
 .cf-tabs-body{
   padding: 0 20px;
 }
+/*Error Page*/
+.error-win{
+  background: #EAEFF2;
+}
+.error-logo{
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+.error-logo img{
+  height: 70px;
+}
+.error-bg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.error-bg img{
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.error-holder{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.error-num{
+  font-size: 180px;
+  color: #240C41;
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+  height: 200px;
+  margin-bottom: 70px;
+}
+.error-text{
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  font-size: 26px;
+}
+.error-dsc{
+  font-size: 20px;
+  margin: 20px;
+}
+.error-button a{
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 5px;
+}
 /*Alerts*/
 .alert-holder{
   position: fixed;
