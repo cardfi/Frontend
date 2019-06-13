@@ -79,11 +79,16 @@ $(document).click(function(e){
 
          interaction: {
              hex: true,
-             rgba: true,
-             hsva: true,
+             rgba: false,
+             hsva: false,
              input: true,
              clear: true,
-             save: true
+             save: false
          }
      }
  });
+
+ pickr.on('change',function(e,t){
+    console.log(e.toHEXA().toString() );
+    $('#card-preview').css("background-color", e.toHEXA().toString());
+});
