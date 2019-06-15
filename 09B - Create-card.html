@@ -127,7 +127,7 @@
 							<div class="add-card-section">
 								<h3>Personal Information</h3>
 								<div class="cf-fl dark-fl necessary-fl">
-									<input type="text" name="" placeholder="Name">
+									<input type="text" name="" placeholder="Name" id="your-name" onkeypress="setNameFunction()">
 								</div>
 								<div class="cf-fl dark-fl necessary-fl">
 									<input type="text" name="" placeholder="Position">
@@ -149,7 +149,7 @@
 								<h3>Company Information</h3>
 								<div class="company-info logo">
 									<div class="logo-preview">
-
+										<img src="images/noxel-b.png" alt="">
 									</div>
 									<input class="light-gr" type="submit" value="Upload logo" />
 								</div>
@@ -176,7 +176,7 @@
 													<div class="des-bg-one" style="background-color: #490FD2;"></div>
 													<div class="des-bg-one des-add-bg">
 														<a href="#">
-															<i class="fa fa-plus"></i>
+															<span class="bg-color-picker"></span>
 														</a>
 													</div>
 												</div>
@@ -221,14 +221,14 @@
 									<div class="add-card-color">
 										<div class="card-color-one">
 											<span>Primary Color</span>
-											<a href="#" style="background-color: #4399EC;">
-												<span class="color-picker"></span>
+											<a href="#">
+												<span class="primary-color-picker"></span>
 											</a>
 										</div>
 										<div class="card-color-one">
 											<span>Secondary Color</span>
 											<a href="#" style="background-color: #4399EC;">
-												<span class="color-picker"></span>
+												<span class="secondary-color-picker"></span>
 											</a>
 										</div>
 									</div>
@@ -239,23 +239,23 @@
 						<div class="cf-full-col add-card-col">
 							<div class="add-card-section">
 								<h3>Card Preview</h3>
-								<div class="my-card-one light-template" bg-color="#ededed" id="card-preview" style="background-color: #ededed;">
+								<div class="my-card-one" bg-color="#fff" id="card-preview" style="background-color: #ededed;">
 									<div class="card-ratio">
 										<img src="images/card-ratio.png" alt="">
 										<div class="personal-info">
-											<h3>Farbod Sadeghian</h3>
-											<span>CEO & Founder</span>
+											<h3 id="on-card-name" class="primary-color-use">Name</h3>
+											<span class="secondary-color-use">CEO & Founder</span>
 										</div>
 										<div class="company-info clearfix">
 											<div class="company-logo">
 												<img src="images/noxel-b.png" alt="">
 											</div>
 											<div class="contact-info">
-												<span>John@noxel.com</span>
+												<span class="primary-color-use">John@noxel.com</span>
 												<br />
-												<span>+98(912)368 4635</span>
+												<span class="primary-color-use">+98(912)368 4635</span>
 												<br />
-												<span>+98(21)8888 8888</span>
+												<span class="primary-color-use">+98(21)8888 8888</span>
 											</div>
 										</div>
 									</div>
@@ -280,6 +280,14 @@
 	<script src="js/fancySelect.js"></script>
 	<script src="js/pickr.es5.min.js"></script>
 	<script src="js/cardfi.js"></script>
+	<script type="text/javascript">
+	function setNameFunction()
+	{
+			var input = document.getElementById('your-name')
+			var div = document.getElementById('on-card-name');
+			div.innerHTML = input.value;
+	}
+	</script>
 </body>
 
 </html>

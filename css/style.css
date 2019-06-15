@@ -818,7 +818,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 /*My Cards*/
 .my-card-one{
   border-radius: 5px;
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
   box-shadow: 0 1px 3px 0 rgba(12,12,13,0.1);
   overflow: hidden;
@@ -829,10 +829,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 }
 .card-ratio img{
   width: 100%;
-}
-.my-card-one.dark-template{
-  background: #10273B;
-  color: #fff;
 }
 .my-card-one.light-template{
   background: #fff;
@@ -863,6 +859,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 }
 .my-card-one .company-logo img{
   height: 15px;
+  width: auto;
 }
 .my-card-one .contact-info{
   float: left;
@@ -993,6 +990,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   height: 100px;
   background: #f1f1f1;
   margin: 0px auto 15px;
+  position: relative;
+}
+.logo-preview img{
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 .map-preview{
   height: 100px;
@@ -1059,14 +1065,35 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   margin-right: 5px;
   margin-bottom: 5px;
   text-align: center;
-  padding-top: 3px;
 }
 .des-add-bg{
   border: 3px solid #9F8EB3;
-
+  position: relative;
+  text-align: center;
+  overflow: hidden;
 }
 .des-add-bg a, .des-add-pic a{
   color: #9F8EB3;
+}
+.des-add-bg a .pickr:after{
+  content: "\f067";
+  font-family: 'fontAwesome';
+  position: absolute;
+  color: #fff;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.des-add-bg .pickr, .card-color-one a .pickr{
+  width: 120%;
+  height: 120%;
+}
+.des-add-bg .pcr-button, .card-color-one a .pcr-button{
+  position: relative;
+  top: -2px;
+  width: 100%;
+  height: 100%;
 }
 .card-des-gr .card-gr-one{
   width: 29%;
