@@ -11,6 +11,32 @@
 </head>
 
 <body>
+<script>
+    const pickr = Pickr.create({
+        el: '.color-picker',
+
+        components: {
+
+            // Main components
+            preview: true,
+            opacity: true,
+            hue: true,
+
+            // Input / output Options
+            interaction: {
+                hex: true,
+                rgba: true,
+                hsla: true,
+                hsva: true,
+                cmyk: true,
+                input: true,
+                clear: true,
+                save: true
+            }
+        }
+    });
+
+</script>
 	<div class="main-win dash-win clearfix">
 		<div class="sidebar">
 			<div class="acc-part">

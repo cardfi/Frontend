@@ -1,3 +1,8 @@
+$(".des-bg-one").on('click',function () {
+   var bg_color = $(this).attr('bg_color');
+   $('#card-preview').css('background',bg_color);
+
+});
 //Expandable Columns
 $('.double-up').click(function(){
   $('.cf-expandable-col').toggleClass('expanded-col');
