@@ -1103,6 +1103,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   margin-right: 5px;
   margin-bottom: 5px;
 }
+.card-gr-one{
+  overflow: hidden;
+}
+.card-gr-one img{
+  height: 100%;
+  width: auto;
+}
 .gr-a{
   background: rgb(77,99,253);
   background: -moz-linear-gradient(90deg, #2C4CD3 0%, #9DC5EE 100%);
