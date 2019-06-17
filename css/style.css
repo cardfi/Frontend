@@ -1252,6 +1252,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   padding: 5px 10px 5px 15px;
   margin-right: 5px;
   margin-bottom: 5px;
+  float: left;
 }
 .contact-label-one i{
   margin-left: 5px;
@@ -1281,6 +1282,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   display: inline-block;
   overflow: hidden;
   margin-right: 10px;
+  float: left;
 }
 .contact-note-one.add-note{
   display: inline-block;
