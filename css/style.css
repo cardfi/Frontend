@@ -851,21 +851,30 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   position: absolute;
   right: 20px;
   bottom: 20px;
+  left: 20px;
+  height: 40%;
 }
 .my-card-one .company-logo{
   float: right;
   padding-left: 10px;
   line-height: 40px;
-}
-.my-card-one .company-logo img{
-  height: 15px;
-  width: auto;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
 }
 .my-card-one .contact-info{
   float: left;
   border-right: 2px solid #eee;
   font-size: 10px;
   padding-right: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
 }
 .my-card-hover{
   position: absolute;
