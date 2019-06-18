@@ -12,8 +12,8 @@ $('.has-sub>a').click(function () {
 });
 
 //Search Fields
-$('.search-part>input').click(function () {
-    $(this).parent().addClass('extend-it');
+$('#search-text').click(function () {
+    $('.search-part').addClass('extend-it');
 });
 $('.close-search').click(function () {
     $('.search-part').removeClass('extend-it');
