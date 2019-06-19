@@ -840,12 +840,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   top: 20px;
 }
 .personal-info h3{
-  font-size: 18px;
+  font-size: 1.2em;
   margin: 0;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 .personal-info span{
-  font-size: 11px;
+  font-size: 0.8em;
 }
 .my-card-one .company-info{
   position: absolute;
@@ -858,7 +859,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   float: right;
   padding-left: 10px;
   line-height: 40px;
-  width: 50%;
+  width: 40%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -870,7 +871,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 .my-card-one .contact-info{
   float: left;
   border-right: 2px solid #eee;
-  font-size: 10px;
+  font-size: 0.8em;
   padding-right: 10px;
   position: absolute;
   bottom: 0;
@@ -934,7 +935,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   background: #F1F1F1;
   color: #999999;
   text-align: center;
-  display: inline-block;
+  float: left;
   width: 100%;
 }
 .my-card-one.add-new i{
@@ -979,7 +980,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 .add-card-section{
   margin-bottom: 40px;
 }
-.add-card-section h3{
+.add-card-section > h3{
   font-size: 16px;
   margin: 10px 0 20px 0;
   color: #240C41;
@@ -1088,10 +1089,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   content: "\f067";
   font-family: 'fontAwesome';
   position: absolute;
-  color: #fff;
+  color: #9F8EB3;
   z-index: 20;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
+  font-size: 10px;
   transform: translate(-50%, -50%);
 }
 .des-add-bg .pickr, .card-color-one a .pickr{
@@ -1341,7 +1343,6 @@ text-align: center;
 }
 .contact-card{
   margin-bottom: 30px;
-  padding: 30px;
 }
 .contact-mutual-events{
   padding: 20px;
