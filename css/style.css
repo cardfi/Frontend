@@ -255,6 +255,7 @@ ul, li{
 .sidebar .acc-part h3{
 	font-weight: 600;
 	color: #fff;
+  text-transform: capitalize;
 }
 .side-menu{
 
@@ -1252,6 +1253,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   text-align: center;
   padding-bottom: 30px;
 }
+.contact-title h3{
+  text-transform: capitalize;
+}
 .contact-title span{
   color: #999999;
 }
@@ -1291,6 +1295,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 }
 .contact-label-one i{
   margin-left: 5px;
+}
+.suggestion .contact-label-one{
+  color: #fff;
+  padding: 5px 10px;
 }
 .contact-label-one.add-new{
   padding: 5px 10px 5px 15px;
@@ -1357,6 +1365,18 @@ text-align: center;
   font-weight: 400;
   border-radius: 3px;
 }
+.contact-more.fixed{
+  position: absolute;
+  background: #fff;
+  padding: 15px 0;
+  left: 15px;
+  bottom: 0;
+  right: 15px;
+  border-radius: 0 0 5px 5px;
+}
+.contact-more.fixed a{
+  margin-top: 0;
+}
 .contact-card{
   margin-bottom: 30px;
 }
@@ -1371,6 +1391,9 @@ text-align: center;
 }
 .event-overview{
   padding: 20px;
+}
+.event-overview.fixed-btn{
+  padding-bottom: 80px;
 }
 .event-overview h3{
   font-size: 18px;
@@ -1620,6 +1643,72 @@ font-size: 20px;
 }
 .cf-tabs-body{
   padding: 0 20px;
+}
+/*Bootstrap Modal*/
+.modal{
+  background: rgba(0, 0, 0, 0.3);
+}
+.modal-content{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+}
+.modal-header{
+  padding: 10px 0;
+  border: 0;
+}
+.modal-has-header .modal-header{
+  padding: 0;
+}
+.modal-has-header .cf-col-head{
+  margin: 0;
+}
+.modal-header h3{
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0;
+}
+.modal-header .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+.modal-fl input {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  height: 45px;
+  padding: 0 15px;
+}
+.modal-fl textarea {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  height: 45px;
+  padding: 0 15px;
+  height: 150px;
+  resize: none;
+}
+.modal-footer{
+  border: 0;
+}
+.modal-btn{
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 3px;
+  float: right;
+  margin-left: 10px;
+}
+.modal-btn.done{
+  font-weight: 500;
+  color: #fff;
+}
+.modal-btn.cancel{
+  background: none;
+}
+.modal-body .event-ov-map{
+  margin: 0;
+  height: 300px;
 }
 /*Error Page*/
 .error-win{
