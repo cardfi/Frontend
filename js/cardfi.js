@@ -31,6 +31,7 @@ $('.notes-carousel').flickity({
   cellAlign: 'left',
   contain: true,
   pageDots: false
+
 });
 
 
