@@ -9,7 +9,6 @@
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 	<div class="main-win dash-win clearfix">
 		<div class="sidebar">
@@ -121,62 +120,114 @@
 			</div>
 			<div class="main-content">
 				<div class="container-fluid">
-					<div class="cf-expandable-col">
+					<div class="cf-full-col contacts-col has-head">
 						<div class="cf-col-head clearfix">
-							<h3>Setting</h3>
-							<h3 class="cf-second-title">Account info</h3>
+							<h3>Contacts</h3>
 						</div>
-						<div class="cf-expandable-single-col">
-							<div class="cf-expandable-body">
-								<ul class="explore-to-do">
-									<li>
-										<a class="double-up" href="#">
-											<span>Account info</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Change password</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Privacy & policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Get premium</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>Log out</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="cf-expandable-single-col second-col">
-							<div class="cf-expandable-body">
-								<div class="setting-fl avatar">
-									<div class="edit-avatar">
-										<img src="images/user.jpg" />
-										<a href="#">
-											<i class="fa fa-pencil"></i>
-										</a>
+						<div class="setting-tabs clearfix" id="setting-tabs">
+							<ul>
+								<li>
+									<a href="#tabs-1">
+										<span>Account info</span>
+									</a>
+								</li>
+								<li>
+									<a href="#tabs-2">
+										<span>Change password</span>
+									</a>
+								</li>
+								<li>
+									<a href="#tabs-3">
+										<span>Privacy & policy</span>
+									</a>
+								</li>
+								<li class="go-premium">
+									<a href="#tabs-4">
+										<span>Get premium</span>
+									</a>
+								</li>
+								<li class="logout">
+									<a href="#">
+										<span>Log out</span>
+									</a>
+								</li>
+							</ul>
+							<div class="setting-tab-body">
+								<div class="setting-tab-content" id="tabs-1">
+									<div class="setting-fl avatar">
+										<div class="edit-avatar">
+											<img src="images/user.jpg" />
+											<a href="#">
+												<i class="fa fa-pencil"></i>
+											</a>
+										</div>
+									</div>
+									<div class="setting-fl">
+										<span>Name</span>
+										<input type="text" placeholder="Name" />
+									</div>
+									<div class="setting-fl">
+										<span>Email</span>
+										<input type="text" placeholder="Email" />
+									</div>
+									<div class="setting-fl cf-fl-btn">
+										<input class="cf-btn light-gr" type="submit" value="Done">
 									</div>
 								</div>
-								<div class="setting-fl">
-									<span>Name</span>
-									<input type="text" placeholder="Name" />
+								<div class="setting-tab-content" id="tabs-2">
+									<div class="setting-fl">
+										<span>Current Password</span>
+										<input type="password" placeholder="Your Password" />
+									</div>
+									<div class="setting-fl">
+										<span>New Password</span>
+										<input type="password" placeholder="New Password" />
+									</div>
+									<div class="setting-fl">
+										<span>Re-enter New Password</span>
+										<input type="password" placeholder="Re-enter" />
+									</div>
+									<div class="setting-fl cf-fl-btn">
+										<input class="cf-btn light-gr" type="submit" value="Done">
+									</div>
 								</div>
-								<div class="setting-fl">
-									<span>Email</span>
-									<input type="text" placeholder="Email" />
+								<div class="setting-tab-content" id="tabs-3">
+									Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
 								</div>
-								<div class="setting-fl cf-fl-btn">
-									<input class="cf-btn light-gr" type="submit" value="Done">
+								<div class="setting-tab-content" id="tabs-4">
+									<div class="pricing-list">
+										<div class="pricing-plan-one clearfix">
+											<div class="special-offer">
+												<span>Best Value</span>
+											</div>
+											<div class="plan-title">
+												<h3>12 Months</h3>
+												<h4>$999 / Month</h4>
+												<span>Save 17%</span>
+											</div>
+											<div class="plan-purchase">
+												<a href="#" class="medium-gr">Subscribe Now</a>
+											</div>
+										</div>
+										<div class="pricing-plan-one clearfix">
+											<div class="plan-title">
+												<h3>12 Months</h3>
+												<h4>$999 / Month</h4>
+												<span>Save 17%</span>
+											</div>
+											<div class="plan-purchase">
+												<a href="#" class="medium-gr">Subscribe Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="setting-fl cf-fl-btn">
+										<input class="cf-btn light-gr" type="submit" value="Got It">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -186,8 +237,14 @@
 		</div>
 	</div>
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/cardfi.js"></script>
+	<script type="text/javascript">
+		$( function() {
+			$('#setting-tabs').tabs();
+		});
+	</script>
 </body>
 
 </html>

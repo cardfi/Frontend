@@ -1586,6 +1586,67 @@ font-size: 20px;
 }
 
 /*Setting*/
+.setting-tabs{
+  height: 80%;
+}
+.setting-tabs ul{
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+
+}
+.setting-tabs ul li{
+  border-bottom: 1px solid #E1D9EB;
+}
+.setting-tabs ul li a{
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  color: #7D718C;
+}
+.setting-tabs ul li a:after{
+  content: "\f105";
+  font-family: 'FontAwesome';
+  position: absolute;
+  color: #FFAA00;
+  font-size: 20px;
+  right: 15px;
+  top: 11px;
+}
+.setting-tabs ul li a:hover,.setting-tabs ul li.ui-tabs-active a{
+  font-weight: 600;
+}
+.setting-tabs ul li a:hover::after, .setting-tabs ul li.ui-tabs-active a:after  {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  position: absolute;
+  color: #FFAA00;
+  font-size: 16px;
+  right: 15px;
+  top: 15px;
+}
+.setting-tabs ul li.go-premium a:after{
+  content: "";
+}
+.setting-tabs ul li.logout a:after{
+  content: "\f08b";
+  color: #999;
+}
+.setting-tabs ul li.logout a:hover::after {
+  font-size: 20px;
+  top: 11px;
+}
+.setting-tab-body{
+  width: 50%;
+  float: left;
+  border-left: 1px solid #F2F2F2;
+  height: 100%;
+}
+.setting-tab-content{
+  padding: 0 20px;
+}
 .setting-fl{
   margin-bottom: 20px;
 }
