@@ -634,6 +634,12 @@ ul.explore-to-do li.logout a:hover::after {
   font-size: 28px;
   padding-top: 17px;
   margin-right: 15px;
+  position: relative;
+}
+.event-ic i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .contact-card-one .event-ic{
   padding-top: 0;
@@ -642,6 +648,23 @@ ul.explore-to-do li.logout a:hover::after {
   width: 62px;
   height: 62px;
   border-radius: 50%;
+}
+.contact-card-one.selected-item .event-ic:after{
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  background: rgba(77,99,253, 0.9);
+  background: -moz-linear-gradient(90deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
+  background: linear-gradient(90deg, rgba(77,99,253,0.9) 0%, rgba(86,54,224,0.9) 100%);
 }
 .event-det h4{
   color: #240C41;
@@ -1333,6 +1356,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   overflow: hidden;
   margin-right: 10px;
   float: left;
+  position: relative;
 }
 .contact-note-one.add-note{
   display: inline-block;
