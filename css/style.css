@@ -553,6 +553,7 @@ a.search-go{
   margin: 0;
   font-size: 18px;
   padding: 15px 20px;
+  text-transform: capitalize;
 }
 .cf-col-head h3.cf-second-title{
   display: none;
@@ -639,7 +640,9 @@ ul.explore-to-do li.logout a:hover::after {
 .event-ic i{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .contact-card-one .event-ic{
   padding-top: 0;
@@ -783,6 +786,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   text-align: center;
   margin-right: 10px;
   background: #FFAA00;
+}
+.explore-req-btn{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.req-btn-one{
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  width: 100px;
+  color: #8A8A8A;
+}
+.req-btn-ic{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 .explore-filters{
   margin-bottom: 20px;
@@ -1288,7 +1312,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
 .contact-title a{
   background: #FFAA00;
   display: inline-block;
-  padding: 3px;
+  padding: 5px 3px;
   width: 25px;
   height: 25px;
   color: #fff;
@@ -1537,19 +1561,35 @@ text-align: center;
   display: inline-block;
 }
 /*Pipelines*/
-.current-event-title{
-  font-size: 36px;
-  color: #7D718C;
+.event-page-title{
+  padding: 20px 15px 15px;
+  position: relative;
   display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.event-page-title input{
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-bottom: 1px solid #DAD7DF;
+  text-transform: capitalize;
+  background: none;
+
+  margin-bottom: 15px;
+}
+.edit-event-title{
+  position: absolute;
+  right: -40px;
+  font-size: 24px;
+  top: 30px;
 }
 .pipeline-tabs{
   position: relative;
 }
 .pipelines{
  padding: 20px 0px;
- margin: 0 20px;
+ margin: 0 160px 0 30px;
 }
 .pipeline-one {
   background: none;
@@ -1644,16 +1684,16 @@ font-size: 20px;
 .setting-tabs{
   height: 80%;
 }
-.setting-tabs ul{
+.setting-tabs > ul{
   width: 50%;
   float: left;
   padding: 0 10px;
 
 }
-.setting-tabs ul li{
+.setting-tabs > ul > li{
   border-bottom: 1px solid #E1D9EB;
 }
-.setting-tabs ul li a{
+.setting-tabs > ul > li a{
   display: inline-block;
   padding: 15px 15px;
   font-size: 14px;
@@ -1661,7 +1701,7 @@ font-size: 20px;
   position: relative;
   color: #7D718C;
 }
-.setting-tabs ul li a:after{
+.setting-tabs > ul > li a:after{
   content: "\f105";
   font-family: 'FontAwesome';
   position: absolute;
@@ -1670,10 +1710,10 @@ font-size: 20px;
   right: 15px;
   top: 11px;
 }
-.setting-tabs ul li a:hover,.setting-tabs ul li.ui-tabs-active a{
+.setting-tabs > ul > li a:hover,.setting-tabs > ul > li.ui-tabs-active a{
   font-weight: 600;
 }
-.setting-tabs ul li a:hover::after, .setting-tabs ul li.ui-tabs-active a:after  {
+.setting-tabs > ul > li a:hover::after, .setting-tabs > ul > li.ui-tabs-active a:after  {
   content: "\f054";
   font-family: 'FontAwesome';
   position: absolute;
@@ -1682,14 +1722,14 @@ font-size: 20px;
   right: 15px;
   top: 15px;
 }
-.setting-tabs ul li.go-premium a:after{
+.setting-tabs > ul li.go-premium a:after{
   content: "";
 }
-.setting-tabs ul li.logout a:after{
+.setting-tabs > ul li.logout a:after{
   content: "\f08b";
   color: #999;
 }
-.setting-tabs ul li.logout a:hover::after {
+.setting-tabs > ul li.logout a:hover::after {
   font-size: 20px;
   top: 11px;
 }
@@ -1757,6 +1797,10 @@ font-size: 20px;
   width: 100%;
   height: 45px;
   border: 0;
+}
+.setting-tab-content .my-card-one{
+  max-width: 400px;
+  margin: 40px auto;
 }
 /*Premium*/
 .pricing-plan-one{

@@ -122,10 +122,12 @@
 			<div class="main-content">
 				<div class="container-fluid">
 					<div class="event-page-title">
-						<h1>Basics Discussion:</h1>
-						<span class="current-event-title">
-							3rd Meeting - Basics Discussions
-						</span>
+						<div class="" id="event-title-inp">
+							Basics Discussion:3rd
+						</div>
+						<div class="edit-event-title">
+							<i class="fa fa-pencil"></i>
+						</div>
 					</div>
 				</div>
 				<div id="pipeline-tabs" class="pipeline-tabs">
@@ -828,6 +830,32 @@
 			prevNextButtons: false
 		});
 		} );
+
+
+		//Edit Title
+		function divClicked() {
+	    var divHtml = $(this).html();
+	    var editableText = $("<input type='text' />");
+	    editableText.val(divHtml);
+	    $(this).replaceWith(editableText);
+	    editableText.focus();
+	    // setup the blur event for this new textarea
+	    editableText.blur(editableTextBlurred);
+		}
+
+		function editableTextBlurred() {
+		    var html = $(this).val();
+		    var viewableText = $("<div>");
+		    viewableText.html(html);
+		    $(this).replaceWith(viewableText);
+		    // setup the click event for this new div
+		    viewableText.click(divClicked);
+		}
+
+		$(document).ready(function() {
+		    $("#event-title-inp").click(divClicked);
+		});
+
 	</script>
 </body>
 
