@@ -227,27 +227,26 @@ ul, li{
 .acc-part .avatar{
 	position: relative;
 	overflow: hidden;
-	width: 100px;
+	width: 120px;
 
 	margin: 0 auto;
 }
 .acc-part .avatar img{
-	width: 100px;
+	width: 120px;
   border-radius: 50%;
 }
 .acc-part .avatar .acc-setting{
   position: absolute;
   right: 5px;
   bottom: 5px;
-  width: 27px;
-  height: 27px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   text-align: center;
-  font-size: 19px;
-  background: #FFAA00;
+  font-size: 20px;
 }
 .acc-part .avatar .acc-setting a{
-  color: #fff;
+  color: #FFAA00;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,22 +256,21 @@ ul, li{
 	font-weight: 600;
 	color: #fff;
   text-transform: capitalize;
-  font-size: 18px;
 }
 .side-menu{
 
 }
 .side-menu > ul{
-	border-top: 1px solid rgba(255,255,255,0.2);
+	border-top: 1px solid #DAD7DF;
 }
 .side-menu > ul > li{
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	padding: 22px 20px;
+	border-bottom: 1px solid #DAD7DF;
+	padding: 15px 20px;
   transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
-  max-height: 75px;
+  max-height: 57px;
   position: relative;
 }
 .side-menu > ul > li > a{
@@ -861,22 +859,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   -o-transition: all ease 0.3s;
   overflow-y: auto;
 }
-.cf-half-col{
-  position: relative;
-  background: #fff;
-  box-shadow: 0 1px 3px 0 rgba(12,12,13,0.2);
-  height: 32vh;
-  transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  border-radius: 5px;
-  overflow-y: auto;
-}
-.cf-half-col.top{
-  margin-bottom: 2vh;
-  height: 46vh;
-}
 .col-scroll-pane{
   overflow-y: auto;
   position: absolute;
@@ -906,28 +888,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd100",endCo
   font-size: 16px;
   font-weight: 500;
 }
-.explore-exchange{
-  padding: 10px 20px;
-}
-.explore-chart-block{
-  padding: 20px;
-}
-.explore-chart-block h3{
-  font-size: 14px;
-  margin: 0;
-}
-.highcharts-yaxis{
-  display: none;
-}
-.highcharts-root *{
-  font-family: 'Roboto';
-}
-.highcharts-grid.highcharts-yaxis-grid .highcharts-grid-line{
-  stroke: rgba(0, 0, 0, 0.04);
-}
-.highcharts-credits, .highcharts-legend, .highcharts-title{
-  display: none;
-}
+
 /*My Cards*/
 .my-card-one{
   border-radius: 5px;

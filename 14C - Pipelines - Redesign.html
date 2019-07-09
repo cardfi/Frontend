@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CardFi Dashboard</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/flickity.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main-win dash-win clearfix">
+		<div class="sidebar">
+			<div class="acc-part">
+				<div class="avatar">
+					<img src="images/user.jpg" />
+					<div class="acc-setting">
+						<a href="#">
+							<i class="fa fa-gear"></i>
+						</a>
+					</div>
+				</div>
+				<h3>Soheil Saffar</h3>
+			</div>
+			<div class="side-menu">
+				<ul>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-home gr-ic"></i>
+							</div>
+							<span>Explore</span>
+						</a>
+					</li>
+					<li class="active">
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-vcard-o gr-ic"></i>
+							</div>
+							<span>My Cards</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-users gr-ic"></i>
+							</div>
+							<span>Contacts</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-handshake-o gr-ic"></i>
+							</div>
+							<span>Events</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-bullseye gr-ic"></i>
+							</div>
+							<span>Pipelines</span>
+						</a>
+						<ul>
+							<li class="current">
+								<a>
+									<span>Create New card</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span>Manage My Cards</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span>Manage My Cards</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<img src="images/logo.png" />
+			</div>
+		</div>
+		<div class="content">
+			<div class="head">
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="container-fluid">
+					<div class="event-page-title">
+						<div class="" id="event-title-inp">
+							Basics Discussion:3rd
+						</div>
+						<div class="edit-event-title">
+							<i class="fa fa-pencil"></i>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="tracker-tabs" id="tracker-tabs">
+						<div class="container-fluid no-padding">
+							<div class="col-sm-3">
+								<div class="tracker-col">
+									<ul class="tracker">
+										<li class="tracker-tab-one">
+											<a href="#tabs-1">
+												<span>1st Meeting</span>
+											</a>
+										</li>
+										<li class="tracker-tab-one">
+											<a href="#tabs-2">
+												<span>2nd Meeting</span>
+											</a>
+										</li>
+										<li class="tracker-tab-one">
+											<a href="#tabs-3">
+												<span>3th Meeting</span>
+											</a>
+										</li>
+										<li class="tracker-tab-one">
+											<a href="#tabs-3">
+												<span>4th Meeting</span>
+											</a>
+										</li>
+										<li class="tracker-tab-one">
+											<a href="#tabs-3">
+												<span>5th Meeting</span>
+											</a>
+										</li>
+									</ul>
+									<div class="tracker-tab-one link-tracker">
+										<a href="#">
+											<i class="fa fa-plus-circle"></i>
+											<span>Link Next Meeting</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-9 no-padding">
+								<div id="tabs-1">
+									<div class="container-fluid no-padding">
+										<div class="col-sm-6">
+											<div class="cf-full-col">
+												<div class="event-overview">
+													<h3>Overview</h3>
+													<div class="event-ov-date">
+														<span>28 March 2018 - 11 a.m (2 months ago)</span>
+													</div>
+													<div class="event-ov-map">
+
+													</div>
+													<div class="event-ov-info">
+														<span>Noxel GmbH</span>
+														<br />
+														<span>Johannesgasse 15/2/8</span>
+														<br />
+														<span>1010 Wien, Austria</span>
+													</div>
+													<div class="contact-meta clearfix">
+														<div class="contact-label-one light-gr">
+															<span>Private</span>
+															<i class="fa fa-close"></i>
+														</div>
+														<div class="contact-label-one light-gr">
+															<span>Friends</span>
+															<i class="fa fa-close"></i>
+														</div>
+														<a href="#" class="contact-label-one add-new">
+															<span>Add tag</span>
+															<i class="fa fa-plus"></i>
+														</a>
+													</div>
+													<div class="contact-meta clearfix">
+														<div class="contact-note-one">
+															<span>
+																Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+															</span>
+														</div>
+														<div class="contact-note-one add-note">
+															<i class="fa fa-plus"></i>
+															<span>
+																Add note
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="cf-full-col">
+												<div class="event-people event-overview">
+													<h4>
+														Peoples
+														<span class="count">(7)</span>
+													</h4>
+													<div class="event-card contact-card-one clearfix">
+														<div class="event-ic">
+															<img src="images/contact.jpg" alt="">
+														</div>
+														<div class="event-det">
+															<h4>
+																Farbod Sadeghian
+															</h4>
+															<span>Marketing Manager at Careem</span>
+														</div>
+														<div class="event-card-tools">
+															<a href="#" class="event-tool-one tool-more">
+																<i class="fa fa-ellipsis-v"></i>
+															</a>
+															<div class="tools-drop">
+																<ul>
+																	<li>
+																		<a href="#">Edit</a>
+																	</li>
+																	<li>
+																		<a href="#">Share</a>
+																	</li>
+																	<li>
+																		<a href="#">Delete</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="event-card-meta">
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-sticky-note-o"></i>
+															</div>
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-tag"></i>
+															</div>
+														</div>
+													</div>
+													<div class="event-card contact-card-one clearfix">
+														<div class="event-ic">
+															<img src="images/contact.jpg" alt="">
+														</div>
+														<div class="event-det">
+															<h4>
+																Farbod Sadeghian
+															</h4>
+															<span>Marketing Manager at Careem</span>
+														</div>
+														<div class="event-card-tools">
+															<a href="#" class="event-tool-one tool-more">
+																<i class="fa fa-ellipsis-v"></i>
+															</a>
+															<div class="tools-drop">
+																<ul>
+																	<li>
+																		<a href="#">Edit</a>
+																	</li>
+																	<li>
+																		<a href="#">Share</a>
+																	</li>
+																	<li>
+																		<a href="#">Delete</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="event-card-meta">
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-sticky-note-o"></i>
+															</div>
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-tag"></i>
+															</div>
+														</div>
+													</div>
+													<div class="event-card contact-card-one clearfix">
+														<div class="event-ic">
+															<img src="images/contact.jpg" alt="">
+														</div>
+														<div class="event-det">
+															<h4>
+																Farbod Sadeghian
+															</h4>
+															<span>Marketing Manager at Careem</span>
+														</div>
+														<div class="event-card-tools">
+															<a href="#" class="event-tool-one tool-more">
+																<i class="fa fa-ellipsis-v"></i>
+															</a>
+															<div class="tools-drop">
+																<ul>
+																	<li>
+																		<a href="#">Edit</a>
+																	</li>
+																	<li>
+																		<a href="#">Share</a>
+																	</li>
+																	<li>
+																		<a href="#">Delete</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="event-card-meta">
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-sticky-note-o"></i>
+															</div>
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-tag"></i>
+															</div>
+														</div>
+													</div>
+													<div class="event-card contact-card-one clearfix">
+														<div class="event-ic">
+															<img src="images/contact.jpg" alt="">
+														</div>
+														<div class="event-det">
+															<h4>
+																Farbod Sadeghian
+															</h4>
+															<span>Marketing Manager at Careem</span>
+														</div>
+														<div class="event-card-tools">
+															<a href="#" class="event-tool-one tool-more">
+																<i class="fa fa-ellipsis-v"></i>
+															</a>
+															<div class="tools-drop">
+																<ul>
+																	<li>
+																		<a href="#">Edit</a>
+																	</li>
+																	<li>
+																		<a href="#">Share</a>
+																	</li>
+																	<li>
+																		<a href="#">Delete</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="event-card-meta">
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-sticky-note-o"></i>
+															</div>
+															<div href="#" class="event-meta-one">
+																<i class="fa fa-tag"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fancySelect.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/cardfi.js"></script>
+	<script type="text/javascript">
+	$( function() {
+		$( "#tracker-tabs" ).tabs();
+
+		$('.pipeline-carousel').flickity({
+		  // options
+		  cellAlign: 'left',
+		  contain: true,
+		  pageDots: false,
+			prevNextButtons: false
+		});
+		} );
+
+
+		//Edit Title
+		function divClicked() {
+	    var divHtml = $(this).html();
+	    var editableText = $("<input type='text' />");
+	    editableText.val(divHtml);
+	    $(this).replaceWith(editableText);
+	    editableText.focus();
+	    // setup the blur event for this new textarea
+	    editableText.blur(editableTextBlurred);
+		}
+
+		function editableTextBlurred() {
+		    var html = $(this).val();
+		    var viewableText = $("<div>");
+		    viewableText.html(html);
+		    $(this).replaceWith(viewableText);
+		    // setup the click event for this new div
+		    viewableText.click(divClicked);
+		}
+
+		$(document).ready(function() {
+		    $("#event-title-inp").click(divClicked);
+		});
+
+	</script>
+</body>
+
+</html>

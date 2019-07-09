@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CardFi Dashboard</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="main-win dash-win clearfix">
+		<div class="sidebar">
+			<div class="acc-part">
+				<div class="avatar">
+					<img src="images/user.jpg" />
+					<div class="acc-setting">
+						<a href="#">
+							<i class="fa fa-gear"></i>
+						</a>
+					</div>
+				</div>
+				<h3>Soheil Saffar</h3>
+			</div>
+			<div class="side-menu">
+				<ul>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-home gr-ic"></i>
+							</div>
+							<span>Explore</span>
+						</a>
+					</li>
+					<li class="active">
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-vcard-o gr-ic"></i>
+							</div>
+							<span>My Cards</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-users gr-ic"></i>
+							</div>
+							<span>Contacts</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-handshake-o gr-ic"></i>
+							</div>
+							<span>Events</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a>
+							<div class="menu-ic">
+								<i class="fa fa-bullseye gr-ic"></i>
+							</div>
+							<span>Pipelines</span>
+						</a>
+						<ul>
+							<li class="current">
+								<a>
+									<span>Create New card</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span>Manage My Cards</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span>Manage My Cards</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<img src="images/logo.png" />
+			</div>
+		</div>
+		<div class="content">
+			<div class="head">
+				<div class="head-filters">
+					<div class="search-part">
+						<input type="text" placeholder="Search anything here" />
+						<div class="search-filter">
+							<a href="#">
+								<i class="fa fa-calendar"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-map-marker"></i>
+							</a>
+							<a href="#" class="light-gr search-go">
+								<i class="fa fa-search"></i>
+								<span>Search</span>
+							</a>
+						</div>
+						<div class="close-search">
+							<a href="#">
+								<i class="fa fa-close"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="head-tools">
+					<a href="#" class="head-tool-one">
+						<i class="fa fa-sign-out"></i>
+					</a>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="container-fluid ">
+					<div class="col-sm-8 no-padding">
+						<div class="container no-padding">
+							<div class="cf-half-col top">
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="cf-half-col">
+									<div class="explore-chart-block">
+										<h3># of Card Exchange</h3>
+										<div id="bar-chart-a"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="cf-half-col">
+									<div class="explore-chart-block">
+										<h3># of Weekly Meeting</h3>
+										<div id="bar-chart-b"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cf-full-col">
+							<div class="explore-exchange">
+								<div class="contact-pic">
+									<img src="images/contact.jpg" alt="">
+								</div>
+								<div class="contact-title">
+									<h3>Farbod Sadeghian</h3>
+									<span>CEO at Noxel</span>
+									<a href="#">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</div>
+								<div class="my-card-one" style="background-color:#10273b;">
+									<div class="card-ratio">
+										<img src="images/card-ratio.png" alt="">
+										<div class="personal-info">
+											<h3 style="color: #fff;">Farbod Sadeghian</h3>
+											<span style="color: #eee;">CEO & Founder</span>
+										</div>
+										<div class="company-info clearfix">
+											<div class="company-logo" style="background-image:url('images/noxel-w.png')">
+
+											</div>
+											<div class="contact-info" style="color: #fff;">
+												<span>John@noxel.com</span>
+												<br />
+												<span>+98(912)368 4635</span>
+												<br />
+												<span>+98(21)8888 8888</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="explore-req-btn">
+									<a href="#" class="req-btn-one">
+										<div class="req-btn-ic medium-gr">
+											<i class="fa fa-refresh"></i>
+										</div>
+										<span>Exchange Card</span>
+									</a>
+									<a href="#" class="req-btn-one">
+										<div class="req-btn-ic light-gr">
+											<i class="fa fa-thumbs-up"></i>
+										</div>
+										<span>Accept card</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fancySelect.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/cardfi.js"></script>
+	<script type="text/javascript">
+		Highcharts.chart('bar-chart-a', {
+		chart: {
+			type: 'column',
+			// width: 350,
+			height: 180,
+			marginBottom: 30,
+			marginLeft: 30,
+			marginRight: 0,
+			marginTop: 20
+		},
+		title: {
+				// text: '# of Card Exchange',
+				align: 'left'
+		},
+
+		xAxis: {
+
+				categories: [
+						'Jan',
+						'Feb',
+						'Mar',
+						'Apr',
+						'May',
+						'Jun',
+						'Jul',
+						'Aug',
+						'Sep',
+						'Oct',
+						'Nov',
+						'Dec'
+				]
+		},
+
+		tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+						'<td style="padding:0"><b>{point.y}</b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+		},
+		plotOptions: {
+				column: {
+						pointPadding: 0.2,
+						borderWidth: 0
+				}
+		},
+		series: [{
+				name: 'Exchanges',
+				data: [42, 33, 20, 39, 52, 75, 57, 60, 47, 22, 31, 50],
+				borderRadius: 3,
+				color: '#ffae00'
+
+		}]
+	});
+
+	Highcharts.chart('bar-chart-b', {
+	chart: {
+			type: 'column',
+			// width: 350,
+			height: 180,
+			marginBottom: 30,
+			marginLeft: 30,
+			marginRight: 0,
+			marginTop: 20
+
+	},
+	title: {
+			// text: '# of Card Exchange',
+			align: 'left'
+	},
+
+	xAxis: {
+			categories: [
+					'Sun',
+					'Mon',
+					'Tue',
+					'Wed',
+					'Thu',
+					'Fri',
+					'Sat'
+			],
+			crosshair: true
+	},
+
+	tooltip: {
+			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+					'<td style="padding:0"><b>{point.y}</b></td></tr>',
+			footerFormat: '</table>',
+			shared: true,
+			useHTML: true
+	},
+	plotOptions: {
+			column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+			}
+	},
+	series: [{
+			name: 'Meetings',
+			data: [5, 1, 0, 8, 2, 4, 1],
+			borderRadius: 3,
+			color: '#1EC4F5'
+
+	}]
+});
+	</script>
+</body>
+
+</html>
