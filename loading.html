@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width">
 	<link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/font-awesome.css" rel="stylesheet">
-	<link href="css/iconfont.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -121,59 +120,105 @@
 				</div>
 			</div>
 			<div class="main-content">
-				<div class="container-fluid">
+				<div class="container-fluid ">
+					<div class="col-sm-8 no-padding">
+						<div class="container no-padding">
+							<div class="cf-half-col top">
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="cf-half-col">
+									<div class="explore-chart-block">
+										<h3># of Card Exchange</h3>
+										<div id="bar-chart-a"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="cf-half-col">
+									<div class="explore-chart-block">
+										<h3># of Weekly Meeting</h3>
+										<div id="bar-chart-b"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cf-full-col">
+							<div class="explore-exchange">
+								<div class="contact-pic">
+									<img src="images/contact.jpg" alt="">
+								</div>
+								<div class="contact-title">
+									<h3>Farbod Sadeghian</h3>
+									<span>CEO at Noxel</span>
+									<a href="#">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</div>
+								<div class="my-card-one" style="background-color:#10273b;">
+									<div class="card-ratio">
+										<img src="images/card-ratio.png" alt="">
+										<div class="personal-info">
+											<h3 style="color: #fff;">Farbod Sadeghian</h3>
+											<span style="color: #eee;">CEO & Founder</span>
+										</div>
+										<div class="company-info clearfix">
+											<div class="company-logo" style="background-image:url('images/noxel-w.png')">
+
+											</div>
+											<div class="contact-info" style="color: #fff;">
+												<span>John@noxel.com</span>
+												<br />
+												<span>+98(912)368 4635</span>
+												<br />
+												<span>+98(21)8888 8888</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="explore-req-btn">
+									<a href="#" class="req-btn-one">
+										<div class="req-btn-ic medium-gr">
+											<i class="fa fa-refresh"></i>
+										</div>
+										<span>Exchange Card</span>
+									</a>
+									<a href="#" class="req-btn-one">
+										<div class="req-btn-ic light-gr">
+											<i class="fa fa-thumbs-up"></i>
+										</div>
+										<span>Accept card</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="alert-holder">
-		<div class="alert-box successful">
-			<div class="alert-ic">
-				<i class="icon feather icon-check"></i>
-			</div>
-			<div class="alert-text">
-				<h3>Successful</h3>
-				<span>Image Uploaded Successfully.</span>
-			</div>
-		</div>
-		<div class="alert-box failed">
-			<div class="alert-ic">
-				<i class="icon feather icon-x-circle"></i>
-			</div>
-			<div class="alert-text">
-				<h3>Failed</h3>
-				<span>Wrong Image Format.</span>
+	<div class="loading">
+		<div class="loading-anim">
+			<img src="images/loading.svg" alt="">
+			<br>
+			<span>Loading...</span>
+			<div class="loading-text">
+				<span>Invite your friends and get free premium</span>
 			</div>
 		</div>
-		<div class="alert-box info">
-			<div class="alert-ic">
-				<i class="icon feather icon-alert-circle"></i>
-			</div>
-			<div class="alert-text">
-				<h3>Info</h3>
-				<span>You already have this card.</span>
-			</div>
-		</div>
+
 	</div>
-	<!-- <div class="alert-holder">
-		<div class="close-alert">
-			<i class="fa fa-close"></i>
-		</div>
-		<div class="alert-win">
-			<div class="alert-title">
-				<h3>Awesome</h3>
-			</div>
-			<div class="alert-icon">
-				<i class="fa fa-check-circle"></i>
-			</div>
-			<div class="alert-dsc">
-				<span>Successfully saved</span>
-			</div>
-		</div>
-	</div> -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fancySelect.js"></script>
+	<script src="js/highcharts.js"></script>
 	<script src="js/cardfi.js"></script>
+	<script type="text/javascript">
+	</script>
 </body>
 
 </html>
